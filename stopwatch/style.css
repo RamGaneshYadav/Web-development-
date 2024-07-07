@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+}
+/*body css*/
+body {
+font-family: sans-serif;
+font-size: 20px;
+width: 100%;
+height: 100vh;
+background-image: url(bg.jpg);
+background-color: rgba(124, 25, 77, 0.874);
+display: flex;
+justify-content: center;
+align-content: center;
+}
+/* outer circle css */
+.outer{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(178, 13, 120, 0.859);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* inner circle css */
+.inner{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: rgb(232, 127, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* button css */
+.button-wrapper{
+    width: 250px;
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.button{
+    width:  80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size:20px ;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(230, 132, 35);
+    color: rgb(10, 0, 0);
+}
+.laps{
+    list-style:none;
+    color: white;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    padding: 20px 0;
+}
+.lap::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.text{
+color: white;
+font-size: 23px;
+}
+.minute{
+    font-size: 48px;
+}
+.sec{
+    font-size: 37px;
+}
+.msec{
+    font-size: 27px;
+}
+
+
+laps{
+
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+.lap-item{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(168, 208, 74);
+    text-align: center;
+    border: 1px solid #e60716;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+.number{
+    color:rgb(250, 6, 6);
+    font-size: 25px;
+}
+.time-stamp{
+   display: inline-block;
+   margin-left: 25px;
+}
+/* clear botton css */
+.lap-clear-button{
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    bottom: 35px;
+    left: 50%;
+    width: 130px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgba(229, 39, 188, 0.9);
+    border: 1px solid white;
+    color: white;
+    transform:translate(-50%);
+
+}
+.lap-clear-button:hover{
+    background-color: rgb(196, 14, 14);
+}
+.hidden{
+    visibility: hidden;
+}
+
+/* animation css  */
+.animation-bg{
+    background: linear-gradient(-45deg, #fdf497 0%,
+    #e3d325 15%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%);
+    
+    background-size: 400% 400%;
+    /* animation:  3s ease infinite; */
+    animation: gredient 2s linear infinite;
+  } 
+  @keyframes gredient{
+    0%{
+        background-position: 0% 50%;
+
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+  }
