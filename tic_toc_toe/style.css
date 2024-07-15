@@ -1,0 +1,60 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-image: url(./img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    background-color: rgb(17, 1, 17);
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    place-content: center;
+}
+.container > div {
+    width: 100px;
+    height: 100px;
+    color: #1f0303;
+    display: grid;
+    font-size: 50px;
+    border: 2px solid rgb(16, 237, 60);
+    place-content: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+button {
+    box-shadow: inset;
+    border-radius: 30px;
+    background: rgb(223, 217, 41);
+    z-index: 2;
+    border-color: rgb(255, 0, 34);
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(42, 223, 45);
+}
+.playgame>h2{
+    color: rgb(37, 2, 7);
+    background: red;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+  
+}
